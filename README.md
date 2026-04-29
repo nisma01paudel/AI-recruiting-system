@@ -36,13 +36,20 @@ To reduce manual effort in recruitment by automatically analyzing resumes and ra
 
 AI-recruiting-system/
 │
-├── datasets/
-├── models/
-├── app/
-├── templates/
-├── static/
-├── requirements.txt
-└── app.py
+├── Frontend/ # Frontend user interface
+│ ├── (HTML, CSS, JS files)
+│
+├── backend/ # Backend logic and APIs
+│ ├── (Flask/Django or server code)
+│
+├── resume rank/
+│ ├── static/
+│ │ ├── uploaded_resumes/ # Uploaded resume storage
+│
+├── package-lock.json # Node dependencies lock file
+│
+├── requirements.txt # Python dependencies (if present)
+└── README.md # Project documentation
 
 
 ---
