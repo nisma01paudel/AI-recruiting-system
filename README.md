@@ -32,8 +32,6 @@ To reduce manual effort in recruitment by automatically analyzing resumes and ra
 
 ---
 
-## Project Structure
-# AI Recruiting System
 
 ## Project Directory Structure
 
