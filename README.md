@@ -33,42 +33,85 @@ To reduce manual effort in recruitment by automatically analyzing resumes and ra
 ---
 
 ## Project Structure
+# AI Recruiting System
 
+## Project Directory Structure
+
+```bash
 AI-recruiting-system/
 │
-├── Frontend/ # Frontend user interface
-│ ├── (HTML, CSS, JS files)
+├── Frontend/                    # Frontend user interface
+│   ├── index.html
+│   ├── styles.css
+│   ├── script.js
+│   ├── components/
+│   └── assets/
 │
-├── backend/ # Backend logic and APIs
-│ ├── (Flask/Django or server code)
+├── backend/                     # Backend logic and APIs
+│   ├── app.py                   # Main Flask/Django file
+│   ├── routes/
+│   ├── models/
+│   ├── controllers/
+│   ├── config.py
+│   └── utils/
 │
-├── resume rank/
-│ ├── static/
-│ │ ├── uploaded_resumes/ # Uploaded resume storage
+├── resume_rank/                 # Resume ranking module
+│   ├── static/
+│   │   ├── uploaded_resumes/    # Uploaded resume storage
+│   │   └── processed_resumes/
+│   ├── main.py
+│   ├── ranker.py
+│   └── utils.py
 │
-├── package-lock.json # Node dependencies lock file
-│
-├── requirements.txt # Python dependencies (if present)
-└── README.md # Project documentation
+├── package-lock.json            # Node.js dependencies lock file
+├── requirements.txt             # Python dependencies
+├── .env                         # Environment variables
+├── .gitignore
+├── README.md                    # Project documentation
+└── run.py                       # Entry point to run the application
+```
 
 
 ---
 
-## ⚙️ Installation
+## ⚙️ Installation & Setup
 
+### 1. Clone the repository
 ```bash
 git clone https://github.com/nisma01paudel/AI-recruiting-system.git
 cd AI-recruiting-system
 ```
-
+2. Backend Setup
 ```
-python -m venv venv
-source venv/bin/activate
+cd backend
+npm install
 ```
-
+Run backend server:
+```
+npm start
+```
+or (if using nodemon):
+```
+npm run dev
+```
+3. Frontend Setup
+```
+cd Frontend
+npm install
+```
+Run frontend:
+```
+npm start
+```
+or:
+```
+npm run dev
+```
+4. Python Dependencies (if applicable)
 ```
 pip install -r requirements.txt
 ```
+Run Python backend:
 ```
 python app.py
 ```
